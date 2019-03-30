@@ -13,7 +13,8 @@ int main()
 
     for(tastControl=1; tastControl<=t; tastControl++)
     {
-        int aPlusb, ab, n, res;
+        int aPlusb, ab, n;
+        long long int res;
 
         scanf("%d%d%d", &aPlusb, &ab, &n);
 
@@ -73,7 +74,7 @@ int main()
 
     res= (pow(y, n)+pow(z, n));
 
-    printf("Case %d: %d\n",tastControl, res);
+    printf("Case %d: %lld\n",tastControl, res);
 
 
     }
