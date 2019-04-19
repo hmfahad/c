@@ -7,16 +7,14 @@
 #include <stdio.h>   //Header file for Standard input Output
 
 
-
-
 int floor_Ceil(float n);        //Function Prototype
 
 int main()
 {
-    int r, c, n, incrementer;       // Local Variable Declaration
+    int row, column, n, incrementer;       // Local Variable Declaration
 
 
-    printf("This Program can print a Pattern of Robot\nPlease Enter Zooming Size 100 to 200\n");
+    printf("This Program can print a Pattern of Robot\nNote: It will be depend on your console size/resolution\n\nPlease Enter Zooming Size 100 to 200\n");
 
     scanf("%d", &n);        //Input Zoom Size
 
@@ -39,7 +37,7 @@ int main()
 
     //Head
 
-   for(r=0; r<floor_Ceil(n*0.4); r++)
+   for(row=0; row<floor_Ceil(n*0.4); row++)
    {
        for(incrementer=0; incrementer<floor_Ceil(n*0.6); incrementer++)
            {
@@ -47,7 +45,7 @@ int main()
            }
 
 
-       for(c=0; c<floor_Ceil(n*0.4); c++)
+       for(column=0; column<floor_Ceil(n*0.4); column++)
        {
            printf("*");
        }
@@ -59,7 +57,7 @@ int main()
    //Neck
 
 
-    for(r=0; r<floor_Ceil(n*0.1); r++)
+    for(row=0; row<floor_Ceil(n*0.1); row++)
    {
        for(incrementer=0; incrementer<floor_Ceil(n*0.75); incrementer++)
            {
@@ -67,7 +65,7 @@ int main()
            }
 
 
-       for(c=0; c<floor_Ceil(n*0.1); c++)
+       for(column=0; column<floor_Ceil(n*0.1); column++)
        {
            printf("*");
        }
@@ -78,7 +76,7 @@ int main()
 
    //Chest
 
-    for(r=0; r<floor_Ceil(n*0.2); r++)
+    for(row=0; row<floor_Ceil(n*0.2); row++)
    {
 
         for(incrementer=0; incrementer<floor_Ceil(n*0.3); incrementer++)
@@ -87,7 +85,7 @@ int main()
            }
 
 
-       for(c=0; c<floor_Ceil(n); c++)
+       for(column=0; column<floor_Ceil(n); column++)
        {
            printf("*");
        }
@@ -98,10 +96,10 @@ int main()
 
    //Hand
 
-    for(r=0; r<floor_Ceil(n*0.3); r++)
+    for(row=0; row<floor_Ceil(n*0.3); row++)
    {
 
-       for(c=0; c<floor_Ceil(n+(n*0.6)); c++)
+       for(column=0; column<floor_Ceil(n+(n*0.6)); column++)
        {
            printf("*");
        }
@@ -112,7 +110,7 @@ int main()
 
    //Belly
 
-    for(r=0; r<floor_Ceil(n*0.5); r++)
+    for(row=0; row<floor_Ceil(n*0.5); row++)
    {
 
         for(incrementer=0; incrementer<floor_Ceil(n*0.3); incrementer++)
@@ -121,7 +119,7 @@ int main()
            }
 
 
-       for(c=0; c<floor_Ceil(n); c++)
+       for(column=0; column<floor_Ceil(n); column++)
        {
            printf("*");
        }
@@ -133,7 +131,7 @@ int main()
 
    //Leg
 
-    for(r=0; r<floor_Ceil(n*0.2); r++)
+    for(row=0; row<floor_Ceil(n*0.2); row++)
    {
        for(incrementer=0; incrementer<floor_Ceil(n*0.425); incrementer++)
            {
@@ -141,7 +139,7 @@ int main()
            }
 
 
-       for(c=0; c<floor_Ceil(n*0.2); c++)
+       for(column=0; column<floor_Ceil(n*0.2); column++)
        {
            printf("*");
        }
@@ -152,7 +150,7 @@ int main()
            }
 
 
-           for(c=0; c<floor_Ceil(n*0.2); c++)
+           for(column=0; column<floor_Ceil(n*0.2); column++)
        {
            printf("*");
        }
