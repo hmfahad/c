@@ -1,21 +1,26 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
+//H. M. FAHAD
+//Id. 183002002
+//Section : DA
+//Assignment for CSE-103
+
+
+#include <stdio.h>   //Header file for Standard input Output
 
 
 
 
-int floor_Ceil(float n);
+int floor_Ceil(float n);        //Function Prototype
 
 int main()
 {
-    int r, c, n, spacecontrol, i;
+    int r, c, n, spacecontrol, i;       // Local Variable Declaration
 
 
     printf("This Program can print a Pattern of Robot\nPlease Enter Zooming Size 100 to 200\n");
 
-    scanf("%d", &n);
+    scanf("%d", &n);        //Input Zoom Size
 
+    //Zooming Control
     if(n<100)
     {
         n=20;
@@ -130,7 +135,7 @@ int main()
 
     for(r=0; r<floor_Ceil(n*0.2); r++)
    {
-       for(i=0; i<floor_Ceil(n*0.4); i++)
+       for(i=0; i<floor_Ceil(n*0.425); i++)
            {
                printf(" ");
            }
@@ -141,7 +146,7 @@ int main()
            printf("*");
        }
 
-       for(i=0; i<floor_Ceil(n*0.4); i++)
+       for(i=0; i<floor_Ceil(n*0.35); i++)
            {
                printf(" ");
            }
@@ -163,6 +168,8 @@ printf("\n\n\tThank You\n\n\n");
     return 0;
 }
 
+
+//User Define Function for Floor or Celling
 
 int floor_Ceil(float n)
 {
