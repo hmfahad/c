@@ -7,45 +7,45 @@
 #include <stdio.h>   //Header file for Standard input Output
 
 
-int floor_Ceil(float n);        //Function Prototype
+int floor_Ceil(float zoomingSize);        //Function Prototype
 
 int main()
 {
-    int row, column, n, incrementer;       // Local Variable Declaration
+    int row, column, zoomingSize, incrementer;       // Local Variable Declaration
 
 
-    printf("This Program can print a Pattern of Robot\nNote: It will be depend on your console size/resolution\n\nPlease Enter Zooming Size 100 to 200\n");
+    printf("This Program can print a Pattern of Robot\nNote: It will be depend on your console size/resolution\n\nPlease Enter Zooming Size Between 100 to 200 : ");
 
-    scanf("%d", &n);        //Input Zoom Size
+    scanf("%d", &zoomingSize);        //Input Zoom Size
 
     //Zooming Control
-    if(n<100)
+    if(zoomingSize<100)
     {
-        n=20;
+        zoomingSize=20;
     }
 
-    else if(n>99&&n<200)
+    else if(zoomingSize>99&&zoomingSize<200)
     {
-      n/=5;
+      zoomingSize/=5;
     }
 
     else
-        n=45;
+        zoomingSize=45;
 
 
 
 
     //Head
 
-   for(row=0; row<floor_Ceil(n*0.4); row++)
+   for(row=0; row<floor_Ceil(zoomingSize*0.4); row++)
    {
-       for(incrementer=0; incrementer<floor_Ceil(n*0.6); incrementer++)
+       for(incrementer=0; incrementer<floor_Ceil(zoomingSize*0.6); incrementer++)
            {
                printf(" ");
            }
 
 
-       for(column=0; column<floor_Ceil(n*0.4); column++)
+       for(column=0; column<floor_Ceil(zoomingSize*0.4); column++)
        {
            printf("*");
        }
@@ -57,15 +57,15 @@ int main()
    //Neck
 
 
-    for(row=0; row<floor_Ceil(n*0.1); row++)
+    for(row=0; row<floor_Ceil(zoomingSize*0.1); row++)
    {
-       for(incrementer=0; incrementer<floor_Ceil(n*0.75); incrementer++)
+       for(incrementer=0; incrementer<floor_Ceil(zoomingSize*0.75); incrementer++)
            {
                printf(" ");
            }
 
 
-       for(column=0; column<floor_Ceil(n*0.1); column++)
+       for(column=0; column<floor_Ceil(zoomingSize*0.1); column++)
        {
            printf("*");
        }
@@ -76,16 +76,16 @@ int main()
 
    //Chest
 
-    for(row=0; row<floor_Ceil(n*0.2); row++)
+    for(row=0; row<floor_Ceil(zoomingSize*0.2); row++)
    {
 
-        for(incrementer=0; incrementer<floor_Ceil(n*0.3); incrementer++)
+        for(incrementer=0; incrementer<floor_Ceil(zoomingSize*0.3); incrementer++)
            {
                printf(" ");
            }
 
 
-       for(column=0; column<floor_Ceil(n); column++)
+       for(column=0; column<floor_Ceil(zoomingSize); column++)
        {
            printf("*");
        }
@@ -96,10 +96,10 @@ int main()
 
    //Hand
 
-    for(row=0; row<floor_Ceil(n*0.3); row++)
+    for(row=0; row<floor_Ceil(zoomingSize*0.3); row++)
    {
 
-       for(column=0; column<floor_Ceil(n+(n*0.6)); column++)
+       for(column=0; column<floor_Ceil(zoomingSize+(zoomingSize*0.6)); column++)
        {
            printf("*");
        }
@@ -110,16 +110,16 @@ int main()
 
    //Belly
 
-    for(row=0; row<floor_Ceil(n*0.5); row++)
+    for(row=0; row<floor_Ceil(zoomingSize*0.5); row++)
    {
 
-        for(incrementer=0; incrementer<floor_Ceil(n*0.3); incrementer++)
+        for(incrementer=0; incrementer<floor_Ceil(zoomingSize*0.3); incrementer++)
            {
                printf(" ");
            }
 
 
-       for(column=0; column<floor_Ceil(n); column++)
+       for(column=0; column<floor_Ceil(zoomingSize); column++)
        {
            printf("*");
        }
@@ -131,26 +131,26 @@ int main()
 
    //Leg
 
-    for(row=0; row<floor_Ceil(n*0.2); row++)
+    for(row=0; row<floor_Ceil(zoomingSize*0.2); row++)
    {
-       for(incrementer=0; incrementer<floor_Ceil(n*0.425); incrementer++)
+       for(incrementer=0; incrementer<floor_Ceil(zoomingSize*0.425); incrementer++)
            {
                printf(" ");
            }
 
 
-       for(column=0; column<floor_Ceil(n*0.2); column++)
+       for(column=0; column<floor_Ceil(zoomingSize*0.2); column++)
        {
            printf("*");
        }
 
-       for(incrementer=0; incrementer<floor_Ceil(n*0.35); incrementer++)
+       for(incrementer=0; incrementer<floor_Ceil(zoomingSize*0.35); incrementer++)
            {
                printf(" ");
            }
 
 
-           for(column=0; column<floor_Ceil(n*0.2); column++)
+           for(column=0; column<floor_Ceil(zoomingSize*0.2); column++)
        {
            printf("*");
        }
@@ -169,18 +169,18 @@ printf("\n\n\tThank You\n\n\n");
 
 //User Define Function for Floor or Celling
 
-int floor_Ceil(float n)
+int floor_Ceil(float zoomingSize)
 {
   float frection;
 
-  frection=n-(int)n;
+  frection=zoomingSize-(int)zoomingSize;
 
   if(frection>0.49)
 
-    return (int)n+1;
+    return (int)zoomingSize+1;
   else
 
-    return (int)n;
+    return (int)zoomingSize;
 
 }
 
