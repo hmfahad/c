@@ -13,7 +13,7 @@ int floor_Ceil(float n);        //Function Prototype
 
 int main()
 {
-    int r, c, n, spacecontrol, i;       // Local Variable Declaration
+    int r, c, n, incrementer;       // Local Variable Declaration
 
 
     printf("This Program can print a Pattern of Robot\nPlease Enter Zooming Size 100 to 200\n");
@@ -41,7 +41,7 @@ int main()
 
    for(r=0; r<floor_Ceil(n*0.4); r++)
    {
-       for(i=0; i<floor_Ceil(n*0.6); i++)
+       for(incrementer=0; incrementer<floor_Ceil(n*0.6); incrementer++)
            {
                printf(" ");
            }
@@ -61,7 +61,7 @@ int main()
 
     for(r=0; r<floor_Ceil(n*0.1); r++)
    {
-       for(i=0; i<floor_Ceil(n*0.75); i++)
+       for(incrementer=0; incrementer<floor_Ceil(n*0.75); incrementer++)
            {
                printf(" ");
            }
@@ -81,7 +81,7 @@ int main()
     for(r=0; r<floor_Ceil(n*0.2); r++)
    {
 
-        for(i=0; i<floor_Ceil(n*0.3); i++)
+        for(incrementer=0; incrementer<floor_Ceil(n*0.3); incrementer++)
            {
                printf(" ");
            }
@@ -115,7 +115,7 @@ int main()
     for(r=0; r<floor_Ceil(n*0.5); r++)
    {
 
-        for(i=0; i<floor_Ceil(n*0.3); i++)
+        for(incrementer=0; incrementer<floor_Ceil(n*0.3); incrementer++)
            {
                printf(" ");
            }
@@ -135,7 +135,7 @@ int main()
 
     for(r=0; r<floor_Ceil(n*0.2); r++)
    {
-       for(i=0; i<floor_Ceil(n*0.425); i++)
+       for(incrementer=0; incrementer<floor_Ceil(n*0.425); incrementer++)
            {
                printf(" ");
            }
@@ -146,7 +146,7 @@ int main()
            printf("*");
        }
 
-       for(i=0; i<floor_Ceil(n*0.35); i++)
+       for(incrementer=0; incrementer<floor_Ceil(n*0.35); incrementer++)
            {
                printf(" ");
            }
