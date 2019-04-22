@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 
-void magicSquire(int n);
+void magicSquere(int n);
 
 int main()
 {
     int n;
 
-     printf("Please Enter Odd number for magic squire:\n");
+     printf("Please Enter Odd number for magic squere:\n");
 
     scanf("%d", &n);
 
@@ -15,7 +15,7 @@ int main()
     {
         do
       {
-        printf("Magic squire doesn't work with even number, Please Enter an odd number:\n");
+        printf("Magic squere doesn't work with even number, Please Enter an odd number:\n");
 
         scanf("%d", &n);
       }
