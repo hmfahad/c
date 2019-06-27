@@ -9,7 +9,7 @@ int floor_Ceil(float n)
 
   frection=n-(int)n;
 
-  if(frection>0.49)
+  if(frection>50)
 
     return (int)n+1;
   else
