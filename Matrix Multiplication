@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+int main()
+{
+
+    int am, an, bm, bn, i, j;
+
+
+    scanf("%d%d", &am, &an);
+
+    int a[101][101];
+
+    for(i=0; i<am; i++)
+    {
+        for(j=0; j<an; j++)
+        {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+
+    scanf("%d%d", &bm, &bn);
+
+    int b[101][101];
+
+    for(i=0; i<bm; i++)
+    {
+        for(j=0; j<bn; j++)
+        {
+            scanf("%d", &b[i][j]);
+        }
+    }
+
+    int c[101][101];
+
+
+
+    if((am!=bm)||(an!=bn))
+    {
+        printf("Addition not possible.\n");
+    }
+    else
+    {
+
+    for(i=0; i<am; i++)
+    {
+        for(j=0; j<an; j++)
+        {
+            c[i][j]=a[i][j]+b[i][j];
+        }
+    }
+
+
+     for(i=0; i<am; i++)
+    {
+        for(j=0; j<an; j++)
+        {
+            printf("%d ", c[i][j]);
+        }
+       // printf("\n");
+    }
+
+    printf("\n");
+
+    }
+
+
+
+
+
+
+    return 0;
+}
